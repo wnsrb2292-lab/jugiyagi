@@ -1,0 +1,19 @@
+{ "name": "jukstory-app",
+  "short_name": "jukstory-app",
+  "icons": [{
+      "src": "./img/icons/android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./img/icons/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#5B693C",
+  "background_color": "#ffffff"
+}
