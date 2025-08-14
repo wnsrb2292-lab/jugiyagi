@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'Jua';
+  src: url('../font/Jua/Jua-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'khula';
+  src: url('../font/khula/khula-regular.otf') format('opentype'),
+      url('../font/khula/khula-bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto_Sans';
+  src: url('../font/Noto_Sans/static/NotoSans-Bold.ttf') format('truetype'),
+      url('../font/Noto_Sans/static/NotoSans-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream';
+  src: url('../font/SCDream/SCDream5.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* wrap */
+a { text-decoration: none; color: inherit; }
+
+.right { float: right; margin-top: 20px; margin-right: 20px; }
+.left { float: left; margin-top: 20px; margin-left: 20px; }
+
+.bg_txt h1 { font: normal 35px "Noto_Sans-Medium"; padding-top: 80px; margin: 20px; justify-self: center; align-items: center; }
+
+/* login */
+.login_inner { display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; gap: 20px; }
+#userid { width: 300px; height: 50px; border-radius: 10px; border: 2px solid #D9D9D9; box-sizing: border-box; padding-left: 10px; font-size: 16px; }
+
+#userpwd { width: 300px; height: 50px; border-radius: 10px; 
+border: 2px solid #D9D9D9; box-sizing: border-box; padding-left: 10px; font-size: 16px; }
+
+.checkbox_area { margin-top: 25px; display: flex; justify-content: center; align-items: center; }
+
+.checkbox_id { transform: translateX(-35px); }
+
+
+.login_btn { box-sizing: border-box; margin-top: 30px; display: flex; justify-content: center; align-items: center; }
+#loginbtn { background-color: #5B693C; font: normal 20px "NotoSans-Bold"; border: none; width: 300px; height: 50px; border-radius: 30px; color: #fff; }
+
+.quick{ display: flex; align-items: center; justify-content: center; color: #3A3A3A; margin: 25px; }
+.quick span { margin: 12px; color: #ccc;}
+
+/* line */
+.line { display: flex; align-items: center; margin: 20px 0; color: #888;
+font-size: 13px; }
+.line hr { flex: 1; height: 1px; border: none;
+background: #ccc; }
+.line span { margin: 0 12px; color: #888;  }
+
+/* bottom */
+.bottom_login { text-align: center; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center; border: none; font-size: 16px; font-weight: bold; gap: 12px; cursor: pointer; margin-top: 20px;
+font: normal 14px "S-CoreDream"; }
+
+.btn_icon { position: absolute; left: 20px; top: 50%; transform: translateY(-50%); padding-left: 10px; }
+.btn_txt { width: 100%; text-align: center; padding-left: 28px; }
+
+.naver, .kakao {  width: 300px; position: relative; overflow: hidden; }
+.naver a, .kakao a { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; position: relative; text-decoration: none;color: inherit; }
+.naver { border: 1px solid #000; background-color: #00BC0C;
+width: 250px; height: 50px; border: none; border-radius: 8px; color: #fff; }
+.kakao { border: 1px solid #000; background-color: #FFE617;
+width: 250px; height: 50px; border: none; border-radius: 5px; color:#47292B; }
+

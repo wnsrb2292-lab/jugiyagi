@@ -1,0 +1,244 @@
+@charset "utf-8";
+
+
+@font-face {
+  font-family: 'Jua';
+  src: url('../font/Jua/Jua-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'khula';
+  src: url('../font/khula/khula-regular.otf') format('opentype'),
+      url('../font/khula/khula-bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto_Sans';
+  src: url('../font/Noto_Sans/static/NotoSans-Bold.ttf') format('truetype'),
+      url('../font/Noto_Sans/static/NotoSans-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream';
+  src: url('../font/SCDream/SCDream5.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HYGungSo';
+  src: url('../font/HYGungSo/HYGungSo.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gowun_Batang';
+  src: url('../font/Gowun_Batang/Gowun_Batang-Regular.ttf') format('truetype');
+  src: url('../font/Gowun_Batang/Gowun_Batang-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+a { text-decoration: none; color: inherit; }
+body { font: normal 12px "돋움","Dotum",sans-serif; color: #333; }
+
+/* side_menu */
+
+#closeMenu {
+position: absolute;
+top: 20px;
+right: 20px;
+font-size: 30px;
+background: none;
+border: none;
+color: #333;
+cursor: pointer;
+}
+
+.slide_menu.open{
+  left: 0;
+}
+
+.overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.4);
+z-index: 500;
+display: none;
+}
+
+.overlay.show {
+display: block;
+}
+
+.slide_menu {
+position: fixed;
+top: 0;
+left: -100%; 
+width: 50%;
+/* transform: translateX(-50%); */
+height: 100%;
+background-color: #fff;
+z-index: 999999;
+transition: left 0.3s ease;
+padding: 20px;
+box-shadow: 2px 0 8px rgba(0,0,0,0.2);
+font: normal 20px "S-CoreDream";
+}
+
+.menu_logo {
+text-align: center;
+margin-bottom: 30px;
+transform: translateX(-10%);
+}
+
+.menu_logo img {
+bottom: -100px;
+}
+
+.menu_section {
+list-style: none;
+padding: 0;
+margin-bottom: 30px;
+line-height: 35px;
+
+}
+
+.menu_section .menu_title {
+font-weight: bold;
+color: #4B2C2C;
+font-size: 16px;
+margin-bottom: 10px;
+
+}
+
+.menu_section span {
+color: #cdcdcd;
+font-size: 13px;
+}
+
+.menu_section li {
+width: 180px;
+font-size: 14px;
+color: #333;
+margin: 5px 0;
+cursor: pointer;
+}
+
+/* wrap */
+#wrap {
+/*   /* margin-left: 0; */
+text-align: center;
+}
+
+.main_banner { width: 100%; height: 300px; position: relative; }
+.main_banner h1 { width: 50%; height: 50px; margin: auto; left: 0; right: 0; margin-top: -180px; color: #fff; text-align: center; font: normal 30px "Gowun Batang", serif; letter-spacing: -1px; line-height: 50px; border: 1px solid #fff; position: relative; z-index: 9999; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.219);} 
+.main_banner p { left: 0; right: 0; margin-top: 20px; color: #fff; text-align: center; letter-spacing: 2px; font: normal 13px "Gowun Batang", serif; } 
+.main_banner img { width: 100%; height: 250px; padding-top: 20px; }
+.slide img { width: 100%; height: 250px; display: none; object-fit: cover; }
+
+.top { padding: 20px; display: flex; align-items: center; /* position: fixed; */ width: 100%; background-color: #5B693C; position: fixed; z-index: 99999;} 
+.top h1 { position: absolute; top: 50%; left: 50%; /* transform: translate(-50%, -50%); */ }
+.top_logo h1 img { width: 75px; height: 50px; top: 0;  position: fixed; display: flex; left: 0; right: 0; margin: 0 auto; top: 15px;} 
+.top_left button { background-color: #5B693C; border: none; }
+
+/* icon_container */
+.icon_container h1 {font: bold 25px "Gowun Batang", serif; float: left; margin-left: 30px; }
+.icon_container { /* margin-bottom: 10px; */ /* margin-top: 5px; */ }
+
+.icon_con { display: flex; justify-content: center; align-items: center; gap: 20px; width: 100%; height: 150px; }
+.icon_con li { width: 100px; height: 100px; }
+.icon_con li img { width: 100%; height: 100%; cursor: pointer; }
+
+.icon_con li img.over1 { display: none; }
+.icon_con li:hover img.default1 { display: none; }
+.icon_con li:hover img.over1 { display: block; }
+
+.icon_con li img.over2 { display: none; }
+.icon_con li:hover img.default2 { display: none; }
+.icon_con li:hover img.over2 { display: block; }
+
+.icon_con li img.over3 { display: none; }
+.icon_con li:hover img.default3 { display: none; }
+.icon_con li:hover img.over3 { display: block; }
+
+.txt_1 ul, .txt_2 ul {
+font: normal 12px "Noto_Sans";
+margin-left: 20px ;
+display: flex;
+justify-content: center;
+gap: 10px;
+padding: 0;
+list-style: none;
+font-weight: bold;
+margin-right: 20px;
+}
+
+.txt_1 li, .txt_2 li {
+text-align: center;
+}
+
+.txt_1 img, .txt_2 img {
+width: 110px;
+height: auto;
+display: block;
+margin: 5px auto;
+border-radius: 15px;
+}
+
+.txt_1 p, .txt_2 p {
+margin-top: 5px;
+font: normal 13px "khula";
+color: #333;
+}
+
+
+.option1 h1, .option2 h1 { font: bold 25px "Gowun Batang", serif; margin-bottom: 5px; margin-left: 30px; text-align: left; }
+.option2 h1 { margin-top: 15px; }
+.txt_1, .txt_2 { padding-bottom: 30px; }
+
+.icon_menu ul { display: flex; padding: 0 8px; margin: 0; gap: 8px; margin-bottom: 5px; justify-content: start;
+font: normal 8px "kula"; padding-left: 30px; }
+.icon_menu1 { width: 70px; height: 30px; background-color: #fff; border: 1px solid #ccc; font-size: 12px;
+line-height: 30px; text-align: center; border-radius: 100px; margin-bottom: 7px; font-weight: bold; }
+.icon_menu2 { width: 70px; height: 30px; background-color: #fff; border: 1px solid #ccc; font-size: 12px;
+line-height: 30px; text-align: center; border-radius: 100px; font-weight: bold; }
+.icon_menu3 { width: 115px; height: 30px; background-color: #fff; border: 1px solid #ccc; font-size: 12px;
+line-height: 30px; text-align: center; border-radius: 100px; font-weight: bold; }
+
+#bottom { color: #7d7d7d; border-top: 1px solid #ccc; padding-top: 15px;  }
+
+/* bottom_upper */
+.f_juk { color:#797979; padding: 20px; font: normal 15px "Jua"; }
+.bottom_upper  { overflow: hidden; font-size: 11px; }
+.bottom_upper address { font-style: normal; padding: 20px; }
+.bottom_upper span { color: #5B9A44; font-weight: bold; font-size: 15px; }
+.bottom_upper ul li { display: flex; text-align: center; margin: 0.2em; }
+
+/* bottom_center */
+.bottom_center { font-size: 12px; }
+.bottom_center ul li { display: inline; margin: 5px; padding: 20px;  }
+
+/* bottom_lower */
+.bottom_lower { background-color: #eaeaea; width: 100%; height: 120px; color: #000; margin-top: 20px; }
+.bottom_lower p { margin: 20px; padding-top: 10px; font-size: 10px; }
+
+/* bottom_menu */
+.bottom_menu { background-color: #5B693C; width: 100%; height: 75px; position: fixed;
+bottom: 0;}
+.bottom_icon { margin: 0; padding: 0; display: flex; align-items: center; list-style: none;}
+.bottom_icon li { flex: 1; text-align: center; }
+.bottom_icon li img { transform: translateY(-10px); }
+#bag { transform: translateY(-20px); }

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/layout2.css">
+  <link rel="manifest" href="manifest.json">
+  <script src="js/javascript2.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="right">
+      <a href="index.html"><img src="images/home_gray.png" alt="home" width="30" height="30"></a>
+    </div><!-- right -->
+    <div class="left">
+      <a href="#"><img src="images/left_gray.png" alt="left" width="20" height="30"></a>
+    </div>
+
+    <div class="bg_txt">
+      <h1>
+        오늘도 <br>
+        좋은 하루 되세요 :)
+      </h1>
+    </div><!-- bg_txt -->
+
+    <form action="#" method="post" id="login">
+      <fieldset>
+        <legend class="hidden"></legend>
+        <div class="login_inner">
+          <div class="id">
+            <label for="userid" class="hidden"></label>
+            <input type="text" id="userid" placeholder="아이디" autofocus>
+          </div><!-- id -->
+          <div class="pwd">
+            <label for="userpwd" class="hidden"></label>
+            <input type="password" id="userpwd" placeholder="비밀번호">
+          </div><!-- pwd -->
+        </div><!-- login_inner  -->
+
+        <div class="checkbox_area">
+          <div class="checkbox_id">
+            <input type="checkbox" id="idsave" name="idsave">
+            <label for="idsave">아이디 저장</label>
+          </div><!-- checkbox_id -->
+          <div class="checkbox_auto">
+          <input type="checkbox" id="autologin" name="autologin">
+          <label for="autologin">자동 로그인</label>
+        </div><!-- checkbox_auto -->
+        </div><!-- checkbox_area -->
+
+        <div class="login_btn">
+          <input type="submit" value="로그인" id="loginbtn">
+        </div><!-- login_btn -->
+      </fieldset>
+    </form><!-- login -->
+    <div class="menu">
+      <ul class="quick">
+        <li><a href="#">아이디 찾기 </a><span>|</span></li>
+        <li><a href="#">비밀번호 찾기 </a><span>|</span></li>
+        <li><a href="#">회원가입</a></li>
+      </ul><!-- quick -->
+  </div><!-- menu -->
+  <div class="line">
+    <hr>
+    <span>또는</span>
+    <hr>
+  </div><!-- line -->
+  <div class="bottom_login">
+    <div class="naver">
+      <a href="#"><img src="images/naver.png" alt="naver" class="btn_icon" width="18"><span class="btn_txt">네이버로 시작하기</span></a>
+    </div><!-- naver -->
+    <div class="kakao">
+      <a href="#"><img src="images/kakao.png" alt="kakao"  class="btn_icon" width="27"><span class="btn_txt">카카오로 시작하기</span></a>
+    </div><!-- kakao -->
+  </div><!-- bottom_login -->
+  </div><!-- wrap -->
+</body>
+</html>

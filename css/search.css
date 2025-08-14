@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+* { margin: 0; padding: 0; text-decoration: none; color: inherit;  }
+body { color: #333; }
+
+.search_box input { width: 360px; height: 50px; border-radius: 50px; margin: 20px 20px; }
+
+.event h3, p { width: 400px; background-color: #ccc; border: 1px solid #000; }
+.event p { }
+.event ul li:nth-child(1) { width: 100%; height: 100px; background: url(../images/event1.jpg) center/cover; } 
+.event ul li:nth-child(2) { width: 100%; height: 100px; background: url(../images/event2.jpg) center/cover; } 
+.event ul li:nth-child(3) { width: 100%; height: 100px; background: url(../images/event3.jpg) center/cover; } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* bottom_menu */
+.bottom_menu { background-color: #5B693C; width: 100%; height: 75px; position: fixed;
+bottom: 0;}
+.bottom_icon { margin: 0; padding: 0; display: flex; align-items: center; list-style: none;}
+.bottom_icon li { flex: 1; text-align: center; }
+.bottom_icon li img { transform: translateY(-10px); }
+#bag { transform: translateY(-20px); }
